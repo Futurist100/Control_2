@@ -32,3 +32,43 @@ int FillMatrixWhitNumbers(string [] arr)
         
 }
 
+FillMatrixWhitNumbers(arr);
+
+
+string [] Arr = new string[count]; 
+
+ void PrintResultMatrix(string [] Arr,string [] arr)
+{
+Console.Write("[");
+
+     count = 0;
+
+      for (int i = 0; i <= 3; i++)
+
+        {
+
+          if (arr[i].Length<=3)
+
+          {    
+
+          Arr[count] = arr[i];
+
+          Console.Write($"{Arr[count]},"); 
+          
+          
+          count++;
+          
+          }
+        }
+
+Console.Write("]");
+
+}
+
+if (count > 0)
+
+PrintResultMatrix(Arr,arr);
+
+else 
+
+ Console.WriteLine("[]"); 
